@@ -1,0 +1,22 @@
+#java classpath
+https://www.chilkatsoft.com/java-classpath-MacOSX.asp
+https://docs.oracle.com/javase/7/docs/technotes/tools/windows/javac.html
+
+Ref: https://www.ntu.edu.sg/home/ehchua/programming/howto/Environment_Variables.html
+
+#Run from cmd line
+Luiginos-MacBook-Pro:wroxJava2 Gino$ javac Fruit.java 
+Luiginos-MacBook-Pro:wroxJava2 Gino$ java wroxJava2.Fruit
+A totally fruity program
+Total fruit is 15
+<classpath>
+(press Enter to exit)
+
+#Workspace eclipse
+/Users/Gino/sandbox/Programming/wroxJava_eclipse/wroxJava2/src/wroxJava2
+
+javac –classpath . OurFirstProgram.java (p57)
+java –ea –classpath . OurFirstProgram
+
+sysout + ctl + spacebar ; 
+cmd + shf + F ; pretty format
