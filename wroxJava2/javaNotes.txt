@@ -15,8 +15,40 @@ Total fruit is 15
 #Workspace eclipse
 /Users/Gino/sandbox/Programming/wroxJava_eclipse/wroxJava2/src/wroxJava2
 
-javac –classpath . OurFirstProgram.java (p57)
-java –ea –classpath . OurFirstProgram
+javac ï¿½classpath . OurFirstProgram.java (p57)
+java ï¿½ea ï¿½classpath . OurFirstProgram
 
 sysout + ctl + spacebar ; 
 cmd + shf + F ; pretty format
+
+#test main with args
+Luiginos-MacBook-Pro:wroxJava2 Gino$ javac JVMTest2.java
+Luiginos-MacBook-Pro:wroxJava2 Gino$ java wroxJava2.JVMTest2 
+args length = 0
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 0
+	at wroxJava2.JVMTest2.main(JVMTest2.java:30)
+Luiginos-MacBook-Pro:wroxJava2 Gino$ java wroxJava2.JVMTest2  10 20
+args length = 2
+sum x+y = 30
+sub x - y = -10
+result = 30
+Luiginos-MacBook-Pro:wroxJava2 Gino$ 
+
+//
+
+Luiginos-MacBook-Pro:wroxJava2 Gino$ java wroxJava2.JVMTest2  10 20a
+args length = 2
+Exception in thread "main" java.lang.NumberFormatException: For input string: "20a"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at wroxJava2.JVMTest2.main(JVMTest2.java:34)
+Luiginos-MacBook-Pro:wroxJava2 Gino$ 
+
+//AIOOB
+String str2 = args[2];
+Luiginos-MacBook-Pro:wroxJava2 Gino$ java wroxJava2.JVMTest2  10 20
+args length = 2
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
+	at wroxJava2.JVMTest2.main(JVMTest2.java:31)
+Luiginos-MacBook-Pro:wroxJava2 Gino$ 
